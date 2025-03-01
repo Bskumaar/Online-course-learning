@@ -1,0 +1,23 @@
+import React from 'react'
+import job from '../assets/job.jpg'
+
+function Mock() {
+  return (
+    
+    <div> <div className='queries mt-5    text-center pt-3'>
+ <h3>Requirements</h3>
+       <div className='mockmain' ><img src={job} className="mockimage"  alt="" />
+          <h2>Only class-completed students are available. </h2>
+          </div>
+    
+</div> 
+
+    
+</div> 
+
+
+  
+  )
+}
+
+export default Mock
