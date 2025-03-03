@@ -1,24 +1,21 @@
-import React from 'react'
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function Hairing({img,name,sub,com,lpa}) {
+
+function Hairing({ img, name, sub, com, lpa }) {
   return (
-    <Card style={{ width: '25rem' }}>
-      <Card.Img variant="top"src= {img} />
-      <Card.Body>
-        <Card.Title> <h3 className='text-center'> {name}</h3></Card.Title>
-        <Card.Text>
-       <p>{sub}</p>
-       <p>{com}</p>
-       <p>{lpa}</p>
-        </Card.Text>
-       
-        {/* <Button  variant="primary">Go somewhere</Button> */}
+    <Card className="custom-card">
+      <Card.Img variant="top" src={img} className="card-img" />
+      <Card.Body className="text-center">
+        <Card.Title className="name">{name}</Card.Title>
+        <Card.Text className="role">{sub}</Card.Text>
+        <Card.Text className="company">{com}</Card.Text>
+        <Card.Text className="salary">{lpa}</Card.Text>
+      
       </Card.Body>
     </Card>
-   
-  )
+  );
 }
 
-export default Hairing
+export default Hairing;

@@ -1,4 +1,5 @@
 import React from 'react'
+import "../css/page/Review.css";
 
 function Review({rev,para}) {
   return (

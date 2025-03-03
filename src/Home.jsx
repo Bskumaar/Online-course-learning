@@ -24,6 +24,8 @@ import stutent5 from './assets/stutent5.jpg'
 import stutent6 from './assets/stutent6.jpg'
 import stutent7 from './assets/stutent7.jpg'
 import stutent8 from './assets/stutent8.jpg'
+import Allcourse from './mainpage/Allcourse';
+import Partner from './mainpage/Partner';
 
 
 function Home() {
@@ -32,9 +34,12 @@ function Home() {
   
       <Appbar />
       <Image />
-
-      <div className='mt-4'> <h1>Trending Course</h1>
-        <div className='ps-5 pe-5 d-flex container-fluid gap-5'>
+      <div className='allcoursemain mt-5'>
+      <Allcourse/>
+      </div>
+      <div className='mt-5'> 
+        <h1>Trending Course</h1>
+        <div className='ps-5 pe-5 d-flex container-fluid gap-5 mt-4'>
           <Popularcourse name="Frontend Development" img={frontend} />
           <Popularcourse name="Fullstack Development" img={fullstack} />
           <Popularcourse name="Data Scince" img={data} />
@@ -50,26 +55,29 @@ function Home() {
         </div>
       </div>
 
-      <div className='mt-4'> <h1>Placement Stutents</h1>
-        <div className='ps-5 pe-5 d-flex container-fluid gap-5'>
-          <Hairing name="Ramesh" sub="Frontend Developer " com="Zoho" lpa="5.5 LPA" img={stutent8} />
-          <Hairing name="Ranjith" sub="FullStack Developer " com="Tcs" lpa="4.6 LPA" img={stutent2} />
+      <div className='mt-5'> <h1>Placement Stutents</h1>
+        <div className='ps-5 pe-5 d-flex container-fluid gap-5 mt-4'>
+          <Hairing name="Ramesh" sub="Frontend" com="Zoho" lpa="5.5 LPA" img={stutent8} />
+          <Hairing name="Ranjith" sub="FullStack" com="Tcs" lpa="4.6 LPA" img={stutent2} />
           <Hairing name="Hema" sub="Data Scince" com="Zoho" lpa="5.5 LPA" img={stutent3} />
-          <Hairing name="Swtha" sub="FullStack Developer" com="Hcl" lpa="4.4 LPA" img={stutent4} />
+          <Hairing name="Swtha" sub="FullStack" com="Hcl" lpa="4.4 LPA" img={stutent4} />
           <Hairing name="Arun" sub="UI/IX" img={stutent5} com="Paypal" lpa="6 LPA" />
-          <Hairing name="Kiran" sub="Frontent Developer" com="Infosys" lpa="5.2 LPA" img={stutent6} />
-          <Hairing name="Lohesh" sub="FullStack Developer" com="capgemini" lpa="4.5 LPA" img={stutent7} />
+          <Hairing name="Kiran" sub="Frontent" com="Infosys" lpa="5.2 LPA" img={stutent6} />
+          {/* <Hairing name="Lohesh" sub="FullStack" com="capgemini" lpa="4.5 LPA" img={stutent7} />
+         */}
         </div>
       </div>
+      <div className='mt-5'>  <Partner/></div>
+ 
 
-      <div className='container-fluid review mb-5'>
+      {/* <div className='container-fluid review mb-5'>
         <div className='row mt-5    '>
           <div className='col-sm-4  '> <Review rev="ramesh,Chennai" para="Attending the one-month virtual Python programming course was a truly enriching experience. The course was well-structured, covering fundamental concepts like data types, loops, and functions, as well as more advanced topics such as object-oriented programming and working with libraries. The hands-on exercises and projects helped me solidify my understanding and gain confidence in coding." /> </div>
           <div className='col-sm-4 ' > <Review rev="ramu, Selam" para="I recently completed the one-month Java programming course offered by Besant Technology and had an outstanding learning experience. The comprehensive curriculum, engaging teaching style, and hands-on exercises made the course both informative and enjoyable. The instructor's expertise and support were exceptional, creating a conducive learning environment. I highly recommend this course to anyone interested in learning java and look forward to future courses from Besant Technology." /> </div>
           <div className='col-sm-4 '> <Review rev="velu,Mudhurai" para="N.Rahul Trainer -- I recently completed the one-month Full Stack programming course offered by Besant Technology and had an outstanding learning experience. The comprehensive curriculum, engaging teaching style, and hands-on exercises made the course both informative and enjoyable. The instructor's expertise and support were exceptional, creating a conducive learning environment. Although the pace was sometimes challenging for beginners, the interactive coding sessions and clear explanations helped solidify my understanding of full stack fundamentals." /> </div>
 
         </div>
-      </div>
+      </div> */}
 
       <Footer />
 
